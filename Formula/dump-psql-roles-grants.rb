@@ -5,8 +5,8 @@ class DumpPsqlRolesGrants < Formula
   homepage "https://github.com/rgeraskin/dump_psql_roles_grants"
   license "MIT"
 
-  url "https://files.pythonhosted.org/packages/36/d4/6b24c1bebcd84b59cc2bc29f41a66532e741997e549b7fb75559f6981b10/dump_psql_roles_grants-0.2.1.tar.gz"
-  sha256 "35fabb368ba71e51f6318090a54e185ba4de3a7112a001fd90fa8e1651534c60"
+  url "https://files.pythonhosted.org/packages/0f/4a/911ed0f2f0430967361263f12358d5b8f977c7647b743364f3385cf1738b/dump_psql_roles_grants-0.2.3.tar.gz"
+  sha256 "1caa15287c6acd282b81ac8e50bee5fea930fb4401cd5bf1ba43f5692e4acb34"
 
   depends_on "python3"
   depends_on "libpq"
