@@ -10,4 +10,7 @@ After tapping the repository, proceed to install the package you need. Each form
 
 The packages available from this repository include:
 
+- [godiffyaml](https://github.com/rgeraskin/godiffyaml)
+- [kctouch](https://github.com/rgeraskin/kctouch)
+- [awsssologin](https://github.com/rgeraskin/awsssologin)
 - [dump-psql-roles-grants](https://github.com/rgeraskin/dump_psql_roles_grants)
