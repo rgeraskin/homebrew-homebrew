@@ -14,4 +14,5 @@ The packages available from this repository include:
 - [godiffyaml](https://github.com/rgeraskin/godiffyaml)
 - [kctouch](https://github.com/rgeraskin/kctouch)
 - [awsssologin](https://github.com/rgeraskin/awsssologin)
+- [wifi-cli](https://github.com/rgeraskin/wifi-cli)
 - [dump-psql-roles-grants](https://github.com/rgeraskin/dump_psql_roles_grants)
