@@ -8,7 +8,7 @@ cask "emojiq" do
          intel: "a6b69b85f80f2522100729533f0f77ed8b0c2dd37f09dbf12dc6aa03872d3c0e"
 
 
-  url "https://github.com/rgeraskin/emojiq/releases/download/v#{version}/emojiq_#{version}_#{arch}.dmg"
+  url "https://github.com/rgeraskin/emojiq/releases/download/v#{version}/emojiq_#{version}_#{arch}_darwin.dmg"
   name "emojiq"
   desc "Emoji picker desktop app"
   homepage "https://github.com/rgeraskin/emojiq"
