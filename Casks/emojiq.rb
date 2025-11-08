@@ -3,9 +3,9 @@
 # PLEASE REMOVE ALL GENERATED COMMENTS BEFORE SUBMITTING YOUR PULL REQUEST!
 cask "emojiq" do
   arch arm: "aarch64", intel: "x64"
-  version "1.0.0"
-  sha256 arm:   "c03570787e25c91be39d76a72521937a5da246a26618d8397a18b754cb729c72",
-         intel: "dc3799bd09dae23422d6a2c57a6da4188774b2c28eb432b0c9b305142b6824f9"
+  version "1.1.0"
+  sha256 arm:   "1131ee44c310cd29bd0e8a04ef6cb7bc014c53e6e3a5f98ff5c400af56878940",
+         intel: "a6b69b85f80f2522100729533f0f77ed8b0c2dd37f09dbf12dc6aa03872d3c0e"
 
 
   url "https://github.com/rgeraskin/emojiq/releases/download/v#{version}/emojiq_#{version}_#{arch}.dmg"
