@@ -5,23 +5,23 @@
 class Awsssologin < Formula
   desc "AWS SSO Login Headless Automation"
   homepage "https://github.com/rgeraskin/awsssologin"
-  version "0.2.0"
+  version "0.2.1"
   license "MIT"
 
   depends_on "awscli"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/rgeraskin/awsssologin/releases/download/v0.2.0/awsssologin_Darwin_x86_64.tar.gz"
-      sha256 "94a454fa0ffeddc7a28cb16a5935d8ae78be6315b6f81ebdcb6f7d11752d4db6"
+      url "https://github.com/rgeraskin/awsssologin/releases/download/v0.2.1/awsssologin_Darwin_x86_64.tar.gz"
+      sha256 "832a0bf712e1559b33668c48634166d859549394080f9cd2cdca9f485881d354"
 
       def install
         bin.install "awsssologin"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/rgeraskin/awsssologin/releases/download/v0.2.0/awsssologin_Darwin_arm64.tar.gz"
-      sha256 "2e19b36c95b4524bf29c28d070da71e59279e2e28f55c9c21ff3a62e7eb88652"
+      url "https://github.com/rgeraskin/awsssologin/releases/download/v0.2.1/awsssologin_Darwin_arm64.tar.gz"
+      sha256 "6b2d56a13c2586b17cc31d341d5c2dbc7795acf5c37dd30dc24186f09472342f"
 
       def install
         bin.install "awsssologin"
@@ -30,16 +30,16 @@ class Awsssologin < Formula
   end
 
   on_linux do
-    if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
-      url "https://github.com/rgeraskin/awsssologin/releases/download/v0.2.0/awsssologin_Linux_x86_64.tar.gz"
-      sha256 "798ba595363a935f602f0e2b0bfdd8f6b8c63244b77d51826115e6ceed3aa2a9"
+    if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
+      url "https://github.com/rgeraskin/awsssologin/releases/download/v0.2.1/awsssologin_Linux_x86_64.tar.gz"
+      sha256 "e141b5c5286419c215200778699fd3fe0ef04f700f4beb54cdeedb23c4acc64b"
       def install
         bin.install "awsssologin"
       end
     end
-    if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
-      url "https://github.com/rgeraskin/awsssologin/releases/download/v0.2.0/awsssologin_Linux_arm64.tar.gz"
-      sha256 "de872cc161749323dfe9aa773624c835ed7a474943d21ff06b3f312f1d35d380"
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://github.com/rgeraskin/awsssologin/releases/download/v0.2.1/awsssologin_Linux_arm64.tar.gz"
+      sha256 "ea4469b2e7b9403e13602f80cce48f9ffcc2fecfff02926fc0009b689ce0295d"
       def install
         bin.install "awsssologin"
       end
