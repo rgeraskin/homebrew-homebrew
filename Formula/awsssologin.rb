@@ -5,25 +5,25 @@
 class Awsssologin < Formula
   desc "AWS SSO Login Headless Automation"
   homepage "https://github.com/rgeraskin/awsssologin"
-  version "0.2.1"
+  version "0.3.0"
   license "MIT"
 
   depends_on "awscli"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/rgeraskin/awsssologin/releases/download/v0.2.1/awsssologin_Darwin_x86_64.tar.gz"
-      sha256 "832a0bf712e1559b33668c48634166d859549394080f9cd2cdca9f485881d354"
+      url "https://github.com/rgeraskin/awsssologin/releases/download/v0.3.0/awsssologin_Darwin_x86_64.tar.gz"
+      sha256 "68aeaf83a6510857459296afd6c0a3c6ec2a3a020ecd96a35fa51cb392313c18"
 
-      def install
+      define_method(:install) do
         bin.install "awsssologin"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/rgeraskin/awsssologin/releases/download/v0.2.1/awsssologin_Darwin_arm64.tar.gz"
-      sha256 "6b2d56a13c2586b17cc31d341d5c2dbc7795acf5c37dd30dc24186f09472342f"
+      url "https://github.com/rgeraskin/awsssologin/releases/download/v0.3.0/awsssologin_Darwin_arm64.tar.gz"
+      sha256 "67c26be22f1890ec8d723fb314a2c8d8652419b8d363c7ed6a2383918929590a"
 
-      def install
+      define_method(:install) do
         bin.install "awsssologin"
       end
     end
@@ -31,16 +31,16 @@ class Awsssologin < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/rgeraskin/awsssologin/releases/download/v0.2.1/awsssologin_Linux_x86_64.tar.gz"
-      sha256 "e141b5c5286419c215200778699fd3fe0ef04f700f4beb54cdeedb23c4acc64b"
-      def install
+      url "https://github.com/rgeraskin/awsssologin/releases/download/v0.3.0/awsssologin_Linux_x86_64.tar.gz"
+      sha256 "78dfe169260d582dd9fde75b85c332272b0db295dbe7738b77c0a1f81dd46e6b"
+      define_method(:install) do
         bin.install "awsssologin"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/rgeraskin/awsssologin/releases/download/v0.2.1/awsssologin_Linux_arm64.tar.gz"
-      sha256 "ea4469b2e7b9403e13602f80cce48f9ffcc2fecfff02926fc0009b689ce0295d"
-      def install
+      url "https://github.com/rgeraskin/awsssologin/releases/download/v0.3.0/awsssologin_Linux_arm64.tar.gz"
+      sha256 "80a21e664b2b8525473b0e7b5dc02352df227a92aeba2931f2aa55893adaa813"
+      define_method(:install) do
         bin.install "awsssologin"
       end
     end
