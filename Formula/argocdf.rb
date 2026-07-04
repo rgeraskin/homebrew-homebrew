@@ -5,7 +5,7 @@
 class Argocdf < Formula
   desc "ArgoCD Diff Tool - show manifest diffs for ArgoCD apps affected by a PR"
   homepage "https://github.com/rgeraskin/argocdf"
-  version "0.2.0"
+  version "0.2.1"
   license "MIT"
 
   depends_on "helm"
@@ -13,16 +13,16 @@ class Argocdf < Formula
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/rgeraskin/argocdf/releases/download/v0.2.0/argocdf_Darwin_x86_64.tar.gz"
-      sha256 "a5d6e75a7259e7a849e51a3af63d30815ec3e6ac4e8556bf5a8bc18911567b3a"
+      url "https://github.com/rgeraskin/argocdf/releases/download/v0.2.1/argocdf_Darwin_x86_64.tar.gz"
+      sha256 "36b13e07d2b12b65a8b4b2301690036897d54a14d10b6d3a0e65c9212fadf109"
 
       define_method(:install) do
         bin.install "argocdf"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/rgeraskin/argocdf/releases/download/v0.2.0/argocdf_Darwin_arm64.tar.gz"
-      sha256 "7b719366d3285577abcd7fd7d541d4b91dd55316a2dbb0aabc706d299057422e"
+      url "https://github.com/rgeraskin/argocdf/releases/download/v0.2.1/argocdf_Darwin_arm64.tar.gz"
+      sha256 "d2d59495e5fbdfba6a76fb131e31260d05acf236ab628505ab84d8edd62d4008"
 
       define_method(:install) do
         bin.install "argocdf"
@@ -32,15 +32,15 @@ class Argocdf < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/rgeraskin/argocdf/releases/download/v0.2.0/argocdf_Linux_x86_64.tar.gz"
-      sha256 "4489c03c7353a704477df45160629b6449f4d8fb3fec2d63843c9faf08728c81"
+      url "https://github.com/rgeraskin/argocdf/releases/download/v0.2.1/argocdf_Linux_x86_64.tar.gz"
+      sha256 "955ba89e7726feade10f6fc8e75ede5e86184d314978f7183d99c05771681078"
       define_method(:install) do
         bin.install "argocdf"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/rgeraskin/argocdf/releases/download/v0.2.0/argocdf_Linux_arm64.tar.gz"
-      sha256 "44083fcc72e9b19f62269617a0947c29e97f59d73b59d459f3defb5d88d7a195"
+      url "https://github.com/rgeraskin/argocdf/releases/download/v0.2.1/argocdf_Linux_arm64.tar.gz"
+      sha256 "dd944c949dc749e7640ca087a2cbd996c50ddea4648f65d2f6e7dbc42f5fc603"
       define_method(:install) do
         bin.install "argocdf"
       end
