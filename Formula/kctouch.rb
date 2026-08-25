@@ -5,23 +5,23 @@
 class Kctouch < Formula
   desc "A cli tool for managing macOS Keychain items with TouchID authentication"
   homepage "https://github.com/rgeraskin/kctouch"
-  version "0.1.0"
+  version "0.2.0"
   license "MIT"
   depends_on :macos
 
-  on_intel do
-    url "https://github.com/rgeraskin/kctouch/releases/download/v0.1.0/kctouch_Darwin_x86_64.tar.gz"
-    sha256 "2b879dcc32b18e60ddb64916f3505cd905a22c5c1f0ab9051baf6da6627cec1b"
+  if Hardware::CPU.intel?
+    url "https://github.com/rgeraskin/kctouch/releases/download/v0.2.0/kctouch_Darwin_x86_64.tar.gz"
+    sha256 "823f303f7df1a1c6b6ab7fbdb527a63e0e332f297af531d9c9499251b4d8bd64"
 
-    def install
+    define_method(:install) do
       bin.install "kctouch"
     end
   end
-  on_arm do
-    url "https://github.com/rgeraskin/kctouch/releases/download/v0.1.0/kctouch_Darwin_arm64.tar.gz"
-    sha256 "8c55b24418623928b21ca9814514a7fa5d2ca44e48dee98ffb4b6468d5e25b40"
+  if Hardware::CPU.arm?
+    url "https://github.com/rgeraskin/kctouch/releases/download/v0.2.0/kctouch_Darwin_arm64.tar.gz"
+    sha256 "cafd1f5f13e9b4b27c92e4d438c87afb3877e0e3b19d7b1d84c311f0d4c7de9a"
 
-    def install
+    define_method(:install) do
       bin.install "kctouch"
     end
   end
