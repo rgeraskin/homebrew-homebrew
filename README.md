@@ -17,3 +17,4 @@ The packages available from this repository include:
 - [wifi-cli](https://github.com/rgeraskin/wifi-cli)
 - [dump-psql-roles-grants](https://github.com/rgeraskin/dump_psql_roles_grants)
 - [valheim-mod-pusher](https://github.com/rgeraskin/valheim-mod-pusher)
+- [argocdf](https://github.com/rgeraskin/argocdf)
