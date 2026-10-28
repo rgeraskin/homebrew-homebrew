@@ -2,15 +2,15 @@
 cask "valheim-mod-pusher" do
   app "Valheim Mod Pusher.app"
 
-  version "0.2.1"
+  version "0.2.2"
 
   on_macos do
     on_intel do
-      sha256 "c764841ac23bb8351383cbaba2d38f414c80c321f08345a4a66883029950df0b"
+      sha256 "ce4563adcc9c774ecebe6331163aa32aa51712fdf28b19fbe7a8bb74c91ec889"
       url "https://github.com/rgeraskin/valheim-mod-pusher/releases/download/v#{version}/valheim-mod-pusher_Darwin_x86_64.tar.gz"
     end
     on_arm do
-      sha256 "2edf98e782e7a9a16b695bbc321cee9c19dc592e5f4c30ba11219bdc3d6e6735"
+      sha256 "770e7cb3f8f032aaefb39e2f28e8e95448d069cb496d3df228f5326f28c16c36"
       url "https://github.com/rgeraskin/valheim-mod-pusher/releases/download/v#{version}/valheim-mod-pusher_Darwin_arm64.tar.gz"
     end
   end
